@@ -68,7 +68,7 @@ def split_node(data, print_tree_mode=False, depth=0):
     if print_tree_mode:
         print(tree_print_sym * depth, f"-{col_max_IG}-")
     else:
-        print("\n\ABOUT TO TRY SPLIT ON:", col_max_IG, "\n")
+        print("\n\nABOUT TO TRY SPLIT ON:", col_max_IG, "\n")
     for ctg in data[col_max_IG].drop_duplicates():
         new_data = data[data[col_max_IG] == ctg]
         if print_tree_mode:
