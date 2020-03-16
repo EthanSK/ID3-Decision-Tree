@@ -31,7 +31,7 @@ def split_node(data, print_tree_mode=False, depth=0):
     if data[label_col_name].nunique() == 1:
         leaf = data[label_col_name].iloc[0]
         if not print_tree_mode:
-            print("FOUND LEAF NODE: ", leaf)
+            print("LEAF NODE: ", leaf)
         else:
             print(tree_print_sym * depth, leaf)
         return leaf
@@ -67,6 +67,8 @@ def split_node(data, print_tree_mode=False, depth=0):
     # now split it based on the col with highest IG
     if print_tree_mode:
         print(tree_print_sym * depth, f"-{col_max_IG}-")
+    else:
+        print("\n\ABOUT TO TRY SPLIT ON:", col_max_IG, "\n")
     for ctg in data[col_max_IG].drop_duplicates():
         new_data = data[data[col_max_IG] == ctg]
         if print_tree_mode:
