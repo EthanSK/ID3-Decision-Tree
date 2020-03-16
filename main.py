@@ -39,6 +39,8 @@ def split_node(data, print_tree_mode=False, depth=0):
     H_data = calc_label_uncertainty(data[label_col_name])
     max_IG = -math.inf
     col_max_IG = ''
+    if not print_tree_mode:
+        print("\n\n======NEW NODE=======")
     for col in data.drop(columns=[label_col_name]):
         if not print_tree_mode:
             print(f"\n----------- IG calculations for {col} --------------")
