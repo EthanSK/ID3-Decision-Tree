@@ -1,6 +1,11 @@
-sky, air, humid, wind, water, forecast, Enjoy Sport
-sunny, warm, normal, strong, warm, same, +
-sunny, warm, high, strong, warm, same, +
-rainy, cold, high, strong, warm, change, -
-sunny, warm, high, strong, cool, change, +
-sunny, warm, normal, weak, warm, same, -
+quality, brand, price, review, buy
+high, famous, normal, bad, yes
+poor, famous, normal, bad, no
+high, mainstream, expensive, good, no
+poor, mainstream, normal, good, no
+standard, mainstream, normal, good, yes
+standard, unknown, expensive, good, yes
+standard, mainstream, normal, bad, no
+high, mainstream, normal, good, yes
+poor, famous, expensive, bad, no
+standard, mainstream, normal, good, yes
