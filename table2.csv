@@ -1,0 +1,11 @@
+quality, brand, price, review, buy
+high, famous, normal, bad, yes
+poor, famous, normal, bad, no
+high, mainstream, expensive, good, no
+poor, mainstream, normal, good, no
+standard, mainstream, normal, good, yes
+standard, unknown, expensive, good, yes
+standard, mainstream, normal, bad, no
+high, mainstream, normal, good, yes
+poor, famous, expensive, bad, no
+standard, mainstream, normal, good, yes

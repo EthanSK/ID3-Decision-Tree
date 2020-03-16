@@ -37,10 +37,13 @@ def split_node(data, print_tree_mode=False, depth=0):
         return leaf
     # first calc the col that gives the highest IG
     H_data = calc_label_uncertainty(data[label_col_name])
+
     max_IG = -math.inf
     col_max_IG = ''
     if not print_tree_mode:
         print("\n\n======NEW NODE=======")
+    if not print_tree_mode:
+        print(f"H_data = {H_data}")
     for col in data.drop(columns=[label_col_name]):
         if not print_tree_mode:
             print(f"\n----------- IG calculations for {col} --------------")
