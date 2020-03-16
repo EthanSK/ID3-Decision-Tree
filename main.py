@@ -78,4 +78,5 @@ def split_node(data, print_tree_mode=False, depth=0):
 
 split_node(df)  # prints intermediate steps
 # too lazy to implement a proper way to print the tree
+print("\n************** Tree **************\n")
 split_node(df, print_tree_mode=True)
